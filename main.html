@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="template.css" />
+    <title>SDSU AI CLUB PROJECT</title>
+  </head>
+  <body>
+    <center>
+        
+    </center>
+    <header>
+      <div class="logo">
+        
+        <p>COVID-19  GLOBAL STATS</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">INTERNATIONAL STATS</a></li>
+          <li><a href="#">LOCAL STATS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <style>
+        body {
+            background-image: url("GM.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+      }
+    </style>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+      <two>
+        <canvas id="axes_line_chart"></canvas>
+
+      </two>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+            <marquee behavior="scroll" direction="left">Coronavirus live updates: U.S. death toll tops 200,000 as cases jump in more than half of states.(CNBC) New research adds to growing evidence for asymptomatic spread of Covid-19.(NBC News) Airlines push for coronavirus testing before international flights.(ABC News) Coronavirus: WHO warns Europe over 'very serious' Covid surge.(BBC News) </marquee>
+
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="Country.js"></script>
+    <script src="format.js"></script>
+  </body>
+</html>
